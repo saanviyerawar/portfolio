@@ -1,28 +1,34 @@
-import React, { useContext } from 'react';
-import { ModeContext } from '../../contexts/ModeProvider';
+import React, { useEffect } from 'react';
 import Background from "./Background";
 
 function Hero() {
-  const { mode, setMode } = useContext(ModeContext);
 
-  const toggleColor = () => {
-    setMode(mode === "dark" ? "light" : "dark");
-  };
+  // const handleScroll = () => {
+  //   const scrollY = window.scrollY;
+  
+  //   // Adjust the parallax speed factor for each cloud
+  //   const rightCloud = document.getElementById('right-cloud');
+  //   const middleCloud = document.getElementById('middle-cloud');
+  //   const leftCloud = document.getElementById('left-cloud');
+  
+  //   if (rightCloud) rightCloud.style.transform = `translateY(${scrollY * 0.2}px)`;
+  //   if (middleCloud) middleCloud.style.transform = `translateY(${scrollY * 0.4}px)`;
+  //   if (leftCloud) leftCloud.style.transform = `translateY(${scrollY * 6}px)`;
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   return (
   <>
     <div>
       <div className="relative w-full h-screen overflow-hidden">
         <Background />
-      </div>
-      <div className="p-5 text-center">
-        <h1>hi</h1>
-        <button
-          onClick={toggleColor}
-          className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none"
-        >
-          Toggle SVG Color
-        </button>
       </div>
     </div>
   </>

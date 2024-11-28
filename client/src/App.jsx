@@ -1,19 +1,20 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ModeProvider } from "./contexts/ModeProvider";
-import Home from "./pages/home/Home";
-import "./styles/App.css";
+import React, { useContext } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { ModeContext } from './contexts/ModeProvider';
+import Home from './pages/home/Home';
+import MenuButton from './components/MenuButton';
+import "./styles/app.css"
+import "./styles/index.css"
 
 function App() {
+  const { mode } = useContext(ModeContext);
   return (
-    <ModeProvider>
-      <div className="dark">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
-    </ModeProvider>
+    <div className={mode}>
+      <MenuButton />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
   );
 }
 

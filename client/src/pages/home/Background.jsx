@@ -3,6 +3,7 @@
 
 import React, { useContext, useEffect, useState } from "react"
 import { ModeContext } from "../../contexts/ModeProvider";
+import "../../styles/hero.css";
 
 function Background() {
   // Get global variable
@@ -38,7 +39,6 @@ function Background() {
         {mode === "dark" ?
           <g filter="url(#sun)">
             <ellipse cx="2560" cy="1396.5" rx="253" ry="253.5" fill="white"/>
-            {/* <ellipse cx="329" cy="329.5" rx="253" ry="253.5" fill="white"/> */}
           </g> : <></>
         }
         {/* Clouds */}

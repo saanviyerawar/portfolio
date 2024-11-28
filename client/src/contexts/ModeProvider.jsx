@@ -1,13 +1,17 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const ModeContext = createContext();
 
-export const ModeProvider = ({ children }) => {
-    const [mode, setMode] = useState("light");
+export function ModeProvider({ children }) {
+  const [mode, setMode] = useState('light');
 
-    return (
-        <ModeContext.Provider value={{ mode, setMode }}>
-            {children}
-        </ModeContext.Provider>
-    );
-};
+  useEffect(() => {
+    document.body.className = mode;
+  }, [mode]);
+
+  return (
+    <ModeContext.Provider value={{ mode, setMode }}>
+      {children}
+    </ModeContext.Provider>
+  );
+}

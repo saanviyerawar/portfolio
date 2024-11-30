@@ -5,14 +5,17 @@ import App from './App';
 import { ModeProvider } from './contexts/ModeProvider'; // Import ModeProvider
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ModeProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <ParallaxProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ParallaxProvider>
     </ModeProvider>
   </React.StrictMode>
 );

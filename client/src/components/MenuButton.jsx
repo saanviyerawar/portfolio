@@ -36,13 +36,14 @@ function MenuButton() {
   return (
     <div className="fixed top-2 left-2 z-50" ref={menuRef}>
       <button
-        className="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-4xl focus:outline-none hover:bg-blue-700 cursor-pointer clickable"
+        className="bg-blue-500 text-white rounded-full m-4 p-3 flex items-center justify-center text-4xl lg:text-5xl focus:outline-none hover:bg-blue-700 cursor-pointer clickable space-x-2"
         onClick={toggleMenu}
       >
-        <MapIcon style={{ color: 'white', fontSize: 50 }} />
+        <MapIcon style={{ color: 'white', fontSize: "2rem" }} />
+        <span className="text-white text-base lg:text-2xl">Map</span>
       </button>
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 bg-white border border-gray-300 shadow-lg rounded-lg p-2 z-50 inline-block">
+        <div className="absolute top-[55px] m-[16px] bg-white border border-gray-300 shadow-lg rounded-lg p-2 z-50 inline-block">
           <ul className="list-none p-0 m-0 whitespace-nowrap">
             <li className="p-2 w-48 hover:bg-gray-100 hover:font-bold cursor-pointer flex items-center">
               <WorkIcon className="mr-2" /> Work Experience

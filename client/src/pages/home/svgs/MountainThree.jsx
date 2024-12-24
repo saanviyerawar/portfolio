@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react"
-import { ModeContext } from "../../contexts/ModeProvider";
+import { ModeContext } from "../../../contexts/ModeProvider";
 
 function MountainThree() {
   // Get global variable and defaults

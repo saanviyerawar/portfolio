@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import { ModeContext } from './contexts/ModeProvider';
 import Home from './pages/home/Home';
 import MenuButton from './components/MenuButton';
-import "./styles/app.css"
 import "./styles/index.css"
 
 function App() {

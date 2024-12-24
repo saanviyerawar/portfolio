@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { ModeContext } from "../../contexts/ModeProvider";
+import { ModeContext } from "../../../contexts/ModeProvider";
 
 function Birds() {
 
@@ -9,9 +9,9 @@ function Birds() {
     <svg className="absolute h-screen top-0 left-1/2 transform -translate-x-1/2" width="5120" height="2160" viewBox="0 0 5120 2160" fill="none" xmlns="http://www.w3.org/2000/svg">
       {mode === "dark" ?
         <>
-          <path d="M2052 1063.13L2069.94 1042L2107.92 1098L2145.9 1042L2167 1063.13" stroke="black" stroke-width="8"/>
-          <path d="M1902 1035.13L1919.94 1014L1957.92 1070L1995.9 1014L2017 1035.13" stroke="black" stroke-width="8"/>
-          <path d="M2192 1007.13L2209.94 986L2247.92 1042L2285.9 986L2307 1007.13" stroke="black" stroke-width="8"/>
+          <path d="M1474 506.132L1491.94 485L1529.92 541L1567.9 485L1589 506.132" stroke="black" stroke-width="8"/>
+          <path d="M1324 478.132L1341.94 457L1379.92 513L1417.9 457L1439 478.132" stroke="black" stroke-width="8"/>
+          <path d="M1614 450.132L1631.94 429L1669.92 485L1707.9 429L1729 450.132" stroke="black" stroke-width="8"/>
         </>
         :
         <>

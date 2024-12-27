@@ -1,6 +1,6 @@
-import Hero from "./Hero";
-import Page from "../../components/Page"
+import Hero from "./sections/Hero";
 import Introduction from "./sections/Introduction";
+import Projects from "./sections/Projects";
 import WorkExperience from "./sections/WorkExperience";
 
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
       <Hero />
       <Introduction />
       <WorkExperience />
+      <Projects />
     </>
   )
 }

@@ -1,14 +1,14 @@
-import MountainOne from "./svgs/MountainOne";
-import MountainTwo from "./svgs/MountainTwo";
-import MountainThree from "./svgs/MountainThree";
+import MountainOne from "../svgs/MountainOne";
+import MountainTwo from "../svgs/MountainTwo";
+import MountainThree from "../svgs/MountainThree";
 import React, { useContext, useEffect, useState } from "react"
-import { ModeContext } from "../../contexts/ModeProvider";
-import MountainFive from "./svgs/MountainFive";
-import MountainFour from "./svgs/MountainFour";
-import Clouds from "./svgs/Clouds";
-import Birds from "./svgs/Birds";
-import EveningBackground from "./svgs/EveningBackground";
-import DayBackground from "./svgs/DayBackground";
+import { ModeContext } from "../../../contexts/ModeProvider";
+import MountainFive from "../svgs/MountainFive";
+import MountainFour from "../svgs/MountainFour";
+import Clouds from "../svgs/Clouds";
+import Birds from "../svgs/Birds";
+import EveningBackground from "../svgs/EveningBackground";
+import DayBackground from "../svgs/DayBackground";
 
 function Hero() {
   const { mode } = useContext(ModeContext);

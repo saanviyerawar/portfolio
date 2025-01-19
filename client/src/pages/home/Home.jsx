@@ -1,3 +1,4 @@
+import Contact from "./sections/Contact";
 import Hero from "./sections/Hero";
 import Introduction from "./sections/Introduction";
 import Projects from "./sections/Projects";
@@ -10,6 +11,7 @@ function Home() {
       <Introduction />
       <WorkExperience />
       <Projects />
+      <Contact />
     </>
   )
 }

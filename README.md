@@ -8,7 +8,7 @@
 With this portfolio, I will be iterating it and constantly working, updating and improving it
 
 ### Interation 1
-- Set up (and create a basic )
+- Set up
 - Understand Node.js (as I will have to learn this)
 - Host
 - Skeleton of home page
@@ -16,3 +16,4 @@ With this portfolio, I will be iterating it and constantly working, updating and
 ### Iteration (future)
 - Host: https://vercel.com/
     - https://www.youtube.com/watch?v=7wzuievFjrk
+    - https://www.youtube.com/watch?v=hn1IkJk24ow

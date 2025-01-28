@@ -18,7 +18,7 @@ function Contact() {
               <img
                 className="w-[75px] h-[75px] aspect-square filter grayscale hover:grayscale-0 transition-all duration-300 
                 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 rounded-lg"
-                src={`${contactPlatform.name}-Logo.png`}
+                src={`${process.env.PUBLIC_URL}/${contactPlatform.name}-Logo.png`}
                 alt={`${contactPlatform.name} logo`}
               />
             </a>

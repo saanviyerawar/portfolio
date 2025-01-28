@@ -23,7 +23,7 @@ function WorkExperience() {
         <div className="flex flex-col gap-11 sticky top-[100px] self-start">
           <HeaderTwo>Work Experience.</HeaderTwo>
           <HeaderThree>In the past I have worked at various different organisations (as an intern).</HeaderThree>
-          <div className="h-[60vh] w-full border border-black flex items-center justify-center">
+          <div className="h-[60vh] w-full border border-black rounded-xl flex items-center justify-center">
             {clickedWorkExperience || hoveredWorkExperience
               ? <WorkExperienceDescription workExperience={clickedWorkExperience || hoveredWorkExperience} /> 
               : "Hover to view work experience information. Click to save the work experience information."

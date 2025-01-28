@@ -6,7 +6,7 @@ function WorkExperienceDescription ({ workExperience }) {
       <div className="flex items-center gap-11">
         <img
           className="h-[80px] aspect-auto"
-          src={`${workExperience.company}-Logo.png`}
+          src={`${process.env.PUBLIC_URL}/${workExperience.company}-Logo.png`}
           alt={`${workExperience.company} logo`}
         />
         <HeaderThree>{workExperience.title}</HeaderThree>

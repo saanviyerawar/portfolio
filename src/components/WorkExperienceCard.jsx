@@ -20,7 +20,8 @@ function WorkExperienceCard({ workExperience, colour, rotate, top, onMouseEnter,
     >
       <img
         className="h-[80px] md:h-[100%] aspect-auto"
-        src={`${workExperience.company}-Logo.png`}
+        // src={`${workExperience.company}-Logo.png`}
+        src={`${process.env.PUBLIC_URL}/${workExperience.company}-Logo.png`}
         alt={`${workExperience.company} logo`}
       />
       <HeaderThree>

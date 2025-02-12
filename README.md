@@ -1,8 +1,11 @@
 # Welcome to my portfolio!
 
 ## Tech Stack
+- Mirgrated to frontend only
 - React (frontend, npm start)
-- Node.js (backend, npm run dev)
+
+- npm run build
+- npm run deploy (to deploy)
 
 ## CI/CD
 With this portfolio, I will be iterating it and constantly working, updating and improving it
@@ -10,13 +13,14 @@ With this portfolio, I will be iterating it and constantly working, updating and
 ### Interation 1
 - Set up
 - Understand Node.js (as I will have to learn this)
-- Host
 - Skeleton of home page
 
-### Iteration (future)
-- Host: https://vercel.com/
-    - https://www.youtube.com/watch?v=7wzuievFjrk
-    - https://www.youtube.com/watch?v=hn1IkJk24ow
+- Ended up doing frontend only
+
+### Iteration 2
+- Secured feedback + usability tests
+- Editted changes
+- Fixing displays of various screen sizes
 
 
 

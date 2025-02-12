@@ -1,4 +1,5 @@
 import HeaderThree from "../../../components/HeaderThree";
+import HeaderTwo from "../../../components/HeaderTwo";
 import SectionTwo from "../../../components/SectionTwo";
 
 function Contact() {
@@ -12,11 +13,12 @@ function Contact() {
     <SectionTwo>
       <div className="flex flex-col items-center gap-11">
         <HeaderThree>Feel free to contact me! :)</HeaderThree>
-        <div className="flex items-center justify-center gap-[100px]">
+        <p>cm.pang25@gmail.com</p>
+        <div className="flex items-center justify-center gap-[50px] md:gap-[100px]">
           {contactPlatformList.map((contactPlatform, index) => (
             <a href={contactPlatform.link} key={index} target="_blank" rel="noopener noreferrer">
               <img
-                className="w-[75px] h-[75px] aspect-square filter grayscale hover:grayscale-0 transition-all duration-300 
+                className="w-[50px] h-[50px] md:w-[75px] md:h-[75px] aspect-square filter grayscale hover:grayscale-0 transition-all duration-300 
                 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 rounded-lg"
                 src={`${process.env.PUBLIC_URL}/${contactPlatform.name}-Logo.png`}
                 alt={`${contactPlatform.name} logo`}

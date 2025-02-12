@@ -6,6 +6,7 @@ import ContactMailIcon from '@mui/icons-material/ContactMail';
 import { ModeContext } from '../contexts/ModeProvider';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import HeaderThree from "./HeaderThree";
 
 function MenuButton() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,13 +35,13 @@ function MenuButton() {
   }, []);
 
   return (
-    <div className="fixed top-2 left-2 z-50" ref={menuRef}>
+    <div className="fixed top-[2px] left-[2px] md:top-2 md:left-2 z-50" ref={menuRef}>
       <button
         className="bg-blue-500 text-white rounded-full m-4 p-3 flex items-center justify-center text-4xl lg:text-5xl focus:outline-none hover:bg-blue-700 cursor-pointer clickable space-x-2"
         onClick={toggleMenu}
       >
         <MapIcon style={{ color: 'white', fontSize: "2rem" }} />
-        <span className="text-white text-base lg:text-2xl">Map</span>
+        <HeaderThree className="hidden md:block text-white text-base lg:text-xl">Map</HeaderThree>
       </button>
       {isMenuOpen && (
         <div className="absolute top-[55px] m-[16px] bg-white border border-gray-300 shadow-lg rounded-lg p-2 z-50 inline-block">

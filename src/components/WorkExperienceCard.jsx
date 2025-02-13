@@ -1,4 +1,4 @@
-function WorkExperienceCard({ workExperience, colour, rotate, top, onMouseEnter, onMouseLeave, onClick, selected }) {
+function WorkExperienceCard({ workExperience, colour, rotate, top, onMouseEnter, onMouseLeave, onClick, selected, key }) {
   function getTopValue(topObj) {
     const width = window.innerWidth;
     if (width >= 1280) return topObj.lg || topObj.default;
@@ -25,6 +25,7 @@ function WorkExperienceCard({ workExperience, colour, rotate, top, onMouseEnter,
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onClick={onClick}
+      key={key}
     >
       <img
         className="h-[80px] md:h-[100%] aspect-auto"

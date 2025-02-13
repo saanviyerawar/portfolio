@@ -11,7 +11,7 @@ function WorkExperience() {
   const [clickedWorkExperience, setClickedWorkExperience] = useState("");
 
   const workExperienceList = [
-    { colour: "#9F3B47", rotate: "5deg", top: { default: "40px", sm: "60px", md: "80px", lg: "100px" },  information: { title: "Product Manager", company: "Mastercard", description: ["Did this", "did that", "did another hing", "a", "b", "c"]}},
+    { colour: "#9F3B47", rotate: "5deg", top: { default: "40px", sm: "60px", md: "80px", lg: "100px" },  information: { title: "Product Manager", company: "Mastercard", description: ["Worked in the product team that leads Click-to-pay in Australia", "Uplifted Click-to-pay within Australia, with total transactions growing 17%", "Developed Click-to-pay's integration within Menulog and secured contractual agreement", "Designed and	optimised UX flows for Click-to-pay experience with Australia's largest merchants, including Chemist Warehouse and Ticketek"]}},
     { colour: "#D37B44", rotate: "-5deg", top: { default: "80px", sm: "120px", md: "160px", lg: "200px" }, information: { title: "Human Centred Design", company: "ASIC",  description: ["Worked on projects for ASIC to uplift products and create new products that impacts 100,000+ organisations", "Conducted user research and usability testing with regulated organisations", "Lead the Moneysmart Homepage usability research project", "Assisted with navigating ambiguous problem spaces and ideating solutions", "Contributed to ASIC's 2030 digital vision to \"become a leading digitally enabled and data-informed regulator by 2030\""]}},
     { colour: "#B25754", rotate: "10deg", top: { default: "120px", sm: "180px", md: "240px", lg: "300px" }, information: { title: "Technical Business Analyst", company: "ASIC",  description: ["Drove innovation within Digital Applications team at ASIC", "Developed templates to automate PDF generation for Professional Search Register", "Tested and analysed the release of new products, including Australian Financial Service Licence application form"]}},
     { colour: "#9F3B47", rotate: "-9deg", top: { default: "160px", sm: "240px", md: "320px", lg: "400px" }, information: { title: "Digital Journey Optimisation", company: "CBA",  description: ["Drove innovation and customer experience with CommBank's new loyalty program ~ Yello", "Created and tested assets that was deliver to the live CommBank application to millions of customers", "Streamlined internal processes to reduce time by 50% for asset generation for Yello", "Conducted in-depth competitor research"]}},
@@ -42,7 +42,7 @@ function WorkExperience() {
                 colour={workExperience.colour}
                 rotate={workExperience.rotate}
                 top={workExperience.top}
-                key={index}
+                key={`workExperience-${index}`}
                 onMouseEnter={() => setHoveredWorkExperience(workExperience)}
                 onMouseLeave={() => setHoveredWorkExperience("")}
                 onClick={() => setClickedWorkExperience(

@@ -1,18 +1,28 @@
 import React from 'react';
 import ProjectsSkillsSlider from "./ProjectsSkillsSlider";
+import DescriptionCard from './DescriptionCard';
+import HeaderThree from './HeaderThree';
 
-function ProjectSquare({ projectName, skillsList }) {
+function ProjectSquare({ project, key }) {
   return (
-    <div className="aspect-square flex flex-col items-center justify-center relative group">
+    <div 
+      className="aspect-square flex flex-col items-center justify-center relative group"
+      key={key}
+    >
       <div className="w-full h-full relative">
-        <img src={`${process.env.PUBLIC_URL}/${projectName}-Project.png`} alt={`${projectName}`} className="w-full h-full object-contain rounded-lg" />
-        <div className="absolute inset-0 bg-gray-300 bg-opacity-60 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 backdrop-blur-md rounded-lg">
-          <span className="text-black text-xl">
-            {projectName}
-          </span>
+        <img 
+          src={`${process.env.PUBLIC_URL}/${project.image}-Project.png`} 
+          alt={`${project.title}`} 
+          className="w-full h-full object-cover object-center rounded-lg" 
+        />
+        <div className="flex flex-col absolute inset-0 p-4 bg-gray-300 bg-opacity-80 items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 backdrop-blur-md rounded-lg gap-[5px] md:gap-[20px]">
+          <HeaderThree>{project.title}</HeaderThree>
+          {project.description.map((description, index) => {
+            return <DescriptionCard description={description} key={`project-${index}`} />
+          })}
         </div>
       </div>
-      <ProjectsSkillsSlider skillsList={skillsList} />
+      <ProjectsSkillsSlider skillsList={project.skills} />
     </div>
   );
 }

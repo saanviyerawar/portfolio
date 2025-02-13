@@ -1,3 +1,4 @@
+import DescriptionCard from "./DescriptionCard";
 import HeaderThree from "./HeaderThree";
 
 function WorkExperienceDescription ({ workExperience }) {
@@ -13,7 +14,7 @@ function WorkExperienceDescription ({ workExperience }) {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10 h-[100%]">
         {workExperience.description.map((description, index) => (
-          <div className="flex justify-center items-center text-center border border-black rounded-xl p-2" key={index}>{description}</div>
+          <DescriptionCard description={description} key={`workExperience-${index}`} />
         ))}
       </div>
     </div>

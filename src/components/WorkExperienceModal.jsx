@@ -33,10 +33,7 @@ const WorkExperienceModal = ({ workExperience, onClose, isOpen }) => {
           className="absolute right-4 top-4 p-1 rounded-full transition-colors duration-200 text-gray-500 hover:text-gray-700"
           aria-label="Close modal"
         >
-          <CancelIcon 
-            size={28}
-            className="hover:scale-110 transition-transform duration-200"
-          />
+          <CancelIcon style={{ height: '45px', width: '45px' }} />
         </button>
         <WorkExperienceDescription workExperience={workExperience?.information || {}} />
       </div>

@@ -1,5 +1,4 @@
 import HeaderThree from "../../../components/HeaderThree";
-import HeaderTwo from "../../../components/HeaderTwo";
 import SectionTwo from "../../../components/SectionTwo";
 
 function Contact() {
@@ -10,7 +9,7 @@ function Contact() {
   ];
 
   return (
-    <SectionTwo>
+    <SectionTwo id="contact">
       <div className="flex flex-col items-center gap-11">
         <HeaderThree>Feel free to contact me! :)</HeaderThree>
         <p>cm.pang25@gmail.com</p>

@@ -24,7 +24,7 @@ function WorkExperience() {
   ];
 
   return (
-    <SectionTwo>
+    <SectionTwo id="work-experience">
       <div className="flex flex-col md:flex-row gap-[50px] md:gap-[100px] justify-between h-auto">
         <div className="flex flex-col gap-11">
           <HeaderTwo className="text-center md:text-left">Work Experience.</HeaderTwo>
@@ -36,7 +36,8 @@ function WorkExperience() {
               >
                 <WorkExperienceDescription workExperience={clickedWorkExperience.information || hoveredWorkExperience.information} />
               </div>
-            : <div className="hidden border-white border-[5px] md:block h-[50vh] w-full rounded-xl flex items-center justify-center sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start" />
+            // : <div className="hidden border-white border-[5px] md:block h-[50vh] w-full rounded-xl flex items-center justify-center sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start" />
+            : <p className="sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start">psssttt... (try clicking one of the boxes)</p>
           }
         </div>
         <div className="w-full md:w-auto flex justify-center md:justify-start">

@@ -30,7 +30,7 @@ function MountainOne() {
       <defs>
         <linearGradient id="mountainOne" x1="2560" y1="1621.5" x2="2560" y2="2160" gradientUnits="userSpaceOnUse">
           <stop stopColor="#98CB3D"/>
-          <stop offset="1" stopColor="#C3D3A6"/>
+          <stop offset="1" stopColor="#F9F5F1"/>
         </linearGradient>
       </defs>
     </svg>

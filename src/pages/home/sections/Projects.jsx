@@ -15,7 +15,7 @@ function Projects () {
   ];
 
   return (
-    <SectionOne>
+    <SectionOne id="projects">
       <div className="flex flex-col items-center gap-11">
         <HeaderTwo>
           Projects.

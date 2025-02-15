@@ -3,10 +3,12 @@ import MapIcon from '@mui/icons-material/Map';
 import WorkIcon from '@mui/icons-material/Work';
 import BuildIcon from '@mui/icons-material/Build';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import { ModeContext } from '../contexts/ModeProvider';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import HeaderThree from "./HeaderThree";
+import { Link } from 'react-scroll';
 
 function MenuButton() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,19 +46,35 @@ function MenuButton() {
         <HeaderThree className="hidden md:block text-white text-base lg:text-xl">Map</HeaderThree>
       </button>
       {isMenuOpen && (
-        <div className="absolute top-[55px] m-[16px] bg-white border border-gray-300 shadow-lg rounded-lg p-2 z-50 inline-block">
+        <div 
+          className="absolute top-[55px] m-[16px] border border-gray-300 shadow-lg rounded-lg p-2 z-50 inline-block"
+          style={{
+            background: mode === "dark" ? "#493A7E" : "#D1D5DB"
+          }}
+        >
           <ul className="list-none p-0 m-0 whitespace-nowrap">
-            <li className="p-2 w-48 hover:bg-gray-100 hover:font-bold cursor-pointer flex items-center">
-              <WorkIcon className="mr-2" /> Work Experience
-            </li>
-            <li className="p-2 w-48 hover:bg-gray-100 hover:font-bold cursor-pointer flex items-center">
-              <BuildIcon className="mr-2" /> Projects
-            </li>
-            <li className="p-2 w-48 hover:bg-gray-100 hover:font-bold cursor-pointer flex items-center">
-              <ContactMailIcon className="mr-2" /> Contact
-            </li>
+            <Link classname="cursor-pointer" to="introduction" spy={true} smooth={true} offset={50} duration={500}>
+              <li className="p-2 w-48 hover:font-bold flex items-center">
+                <AccountBoxIcon className="mr-2" /> Introduction
+              </li>
+            </Link>
+            <Link classname="cursor-pointer" to="work-experience" spy={true} smooth={true} offset={50} duration={500}>
+              <li className="p-2 w-48 hover:font-bold flex items-center">
+                <WorkIcon className="mr-2" /> Work Experience
+              </li>
+            </Link>
+            <Link classname="cursor-pointer" to="projects" spy={true} smooth={true} offset={50} duration={500}>
+              <li className="p-2 w-48 hover:font-bold flex items-center">
+                  <BuildIcon className="mr-2" /> Projects
+              </li>
+            </Link>
+            <Link classname="cursor-pointer" to="contact" spy={true} smooth={true} offset={50} duration={500}>
+              <li className="p-2 w-48 hover:font-bold flex items-center">
+                  <ContactMailIcon className="mr-2" /> Contact
+              </li>
+            </Link>
             <li 
-              className="p-2 w-48 hover:bg-gray-100 hover:font-bold cursor-pointer flex items-center clickable"
+              className="p-2 w-48 hover:font-bold cursor-pointer flex items-center clickable"
               onClick={toggleColor}
             >
               {mode === "dark" ? (

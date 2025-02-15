@@ -1,6 +1,7 @@
-function Page({ children, paddingX, paddingY, background }) {
+function Page({ children, paddingX, paddingY, background, id }) {
   return (
     <div
+      id={id}
       style={{ backgroundColor: background }}
       className={`
         ${paddingX ? "px-[4vw] sm:px-[6vw] md:px-[8vw] lg:px-[10vw]" : ""}

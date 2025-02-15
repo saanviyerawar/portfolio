@@ -5,7 +5,6 @@ const DynamicFavicon = () => {
   const { mode } = useContext(ModeContext);
 
   useEffect(() => {
-    // Get the existing favicon element that's in your index.html
     const existingFavicon = document.querySelector("link[rel='icon']");
     
     const svg = `
@@ -18,9 +17,8 @@ const DynamicFavicon = () => {
     if (existingFavicon) {
       existingFavicon.setAttribute('href', `data:image/svg+xml,${encodeURIComponent(svg)}`);
     }
-  }, [mode]); // Update whenever mode changes
+  }, [mode]);
 
-  // Component doesn't render anything visible
   return null;
 };
 

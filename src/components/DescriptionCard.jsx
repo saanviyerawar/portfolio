@@ -1,4 +1,4 @@
-function DescriptionCard({ description, key }) {
+function DescriptionCard({ description }) {
   // Turn into bionic text
   const splitWords = description.split(" ").map((word, index) => {
     const boldPart = word.slice(0, Math.ceil(word.length / 2));
@@ -14,7 +14,7 @@ function DescriptionCard({ description, key }) {
   });
 
   return (
-    <div className="flex justify-center items-center text-center border border-black rounded-xl p-2 w-[100%]" key={key}>
+    <div className="flex justify-center items-center text-center border border-black rounded-xl p-2 w-[100%]">
       <span>{splitWords}</span>
     </div>
   );

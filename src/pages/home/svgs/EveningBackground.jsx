@@ -8,7 +8,7 @@ function EveningBackground() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_86_408)">
+      <g clipPath="url(#clip0_86_408)">
         <rect width="5120" height="2160" fill="url(#paint0_linear_86_408)" />
         <g filter="url(#filter0_d_86_408)">
           <ellipse
@@ -114,9 +114,9 @@ function EveningBackground() {
           width="926"
           height="927"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -155,9 +155,9 @@ function EveningBackground() {
           width="134.301"
           height="134.298"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -190,9 +190,9 @@ function EveningBackground() {
           width="80"
           height="80"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -225,9 +225,9 @@ function EveningBackground() {
           width="75"
           height="75"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -260,9 +260,9 @@ function EveningBackground() {
           width="70"
           height="70"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -295,9 +295,9 @@ function EveningBackground() {
           width="75"
           height="75"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -330,9 +330,9 @@ function EveningBackground() {
           width="74"
           height="74"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -365,9 +365,9 @@ function EveningBackground() {
           width="68"
           height="68"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -401,8 +401,8 @@ function EveningBackground() {
           y2="1533.09"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#493A7E" />
-          <stop offset="0.60818" stop-color="#E7853C" />
+          <stop stopColor="#493A7E" />
+          <stop offset="0.60818" stopColor="#E7853C" />
         </linearGradient>
         <radialGradient
           id="paint1_radial_86_408"
@@ -412,8 +412,8 @@ function EveningBackground() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(2560 1396.5) rotate(90) scale(253.5 253)"
         >
-          <stop stop-color="#D26D52" />
-          <stop offset="1" stop-color="#F1B625" />
+          <stop stopColor="#D26D52" />
+          <stop offset="1" stopColor="#F1B625" />
         </radialGradient>
         <linearGradient
           id="paint2_linear_86_408"
@@ -423,11 +423,11 @@ function EveningBackground() {
           y2="41.5683"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="0.240448" stop-color="#E6E6E6" stop-opacity="0.5" />
-          <stop offset="0.462091" stop-color="#D0D0D0" stop-opacity="0.4" />
-          <stop offset="0.710119" stop-color="#B7B7B7" stop-opacity="0.3" />
-          <stop offset="1" stop-color="#999999" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="0.240448" stopColor="#E6E6E6" stopOpacity="0.5" />
+          <stop offset="0.462091" stopColor="#D0D0D0" stopOpacity="0.4" />
+          <stop offset="0.710119" stopColor="#B7B7B7" stopOpacity="0.3" />
+          <stop offset="1" stopColor="#999999" stopOpacity="0" />
         </linearGradient>
         <clipPath id="clip0_86_408">
           <rect width="5120" height="2160" fill="white" />

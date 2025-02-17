@@ -35,7 +35,7 @@ const WorkExperienceModal = ({ workExperience, onClose, isOpen }) => {
         >
           <CancelIcon style={{ height: '45px', width: '45px' }} />
         </button>
-        <WorkExperienceDescription workExperience={workExperience?.information || {}} />
+        <WorkExperienceDescription workExperience={workExperience || {}} />
       </div>
     </div>
   );

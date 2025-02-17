@@ -12,7 +12,7 @@ function Contact() {
     <SectionTwo id="contact">
       <div className="flex flex-col items-center gap-11">
         <HeaderThree>Feel free to contact me! :)</HeaderThree>
-        <p>cm.pang25@gmail.com</p>
+        <p>Email: cm.pang25@gmail.com</p>
         <div className="flex items-center justify-center gap-[50px] md:gap-[100px]">
           {contactPlatformList.map((contactPlatform, index) => (
             <a href={contactPlatform.link} key={index} target="_blank" rel="noopener noreferrer">

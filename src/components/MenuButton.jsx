@@ -53,29 +53,37 @@ function MenuButton() {
           }}
         >
           <ul className="list-none p-0 m-0 whitespace-nowrap">
-            <Link classname="cursor-pointer" to="introduction" spy={true} smooth={true} offset={50} duration={500}>
+            <Link classname="cursor-pointer" to="introduction" spy={true} smooth={true} offset={50} duration={1000}
+              onClick={() => setIsMenuOpen(false)}
+            >
               <li className="p-2 w-48 hover:font-bold flex items-center">
                 <AccountBoxIcon className="mr-2" /> Introduction
               </li>
             </Link>
-            <Link classname="cursor-pointer" to="work-experience" spy={true} smooth={true} offset={50} duration={500}>
+            <Link classname="cursor-pointer" to="work-experience" spy={true} smooth={true} offset={50} duration={1000}
+              onClick={() => setIsMenuOpen(false)}
+            >
               <li className="p-2 w-48 hover:font-bold flex items-center">
                 <WorkIcon className="mr-2" /> Work Experience
               </li>
             </Link>
-            <Link classname="cursor-pointer" to="projects" spy={true} smooth={true} offset={50} duration={500}>
+            <Link classname="cursor-pointer" to="projects" spy={true} smooth={true} offset={50} duration={1000}
+              onClick={() => setIsMenuOpen(false)}
+            >
               <li className="p-2 w-48 hover:font-bold flex items-center">
                   <BuildIcon className="mr-2" /> Projects
               </li>
             </Link>
-            <Link classname="cursor-pointer" to="contact" spy={true} smooth={true} offset={50} duration={500}>
+            <Link classname="cursor-pointer" to="contact" spy={true} smooth={true} offset={50} duration={1000}
+              onClick={() => setIsMenuOpen(false)}
+            >
               <li className="p-2 w-48 hover:font-bold flex items-center">
                   <ContactMailIcon className="mr-2" /> Contact
               </li>
             </Link>
             <li 
               className="p-2 w-48 hover:font-bold cursor-pointer flex items-center clickable"
-              onClick={toggleColor}
+              onClick={() => {toggleColor(); setIsMenuOpen(false);}}
             >
               {mode === "dark" ? (
                 <>

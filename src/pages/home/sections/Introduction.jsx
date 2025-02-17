@@ -34,7 +34,7 @@ function Introduction() {
           onMouseLeave={() => setHovered(false)}
           onMouseMove={handleMouseMove}
         >
-          <HeaderOne className="text-6xl md:text-8xl">Hello,<br />I am Min.</HeaderOne>
+          <HeaderOne className="text-6xl md:text-8xl">Hello,<br />I am <span className="underline">Min.</span></HeaderOne>
           {hovered && 
             <img
               src={`${process.env.PUBLIC_URL}/Me.png`}

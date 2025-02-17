@@ -22,21 +22,13 @@ a, button, .clickable {
 }
 
 .dark {
-  background-color: #493A7E;
+  background-color: #000020;
   color: #E7853C;
 }
 
 .light {
-  background-color: #97D7FF;
-  color: black;
-}
-
-.dark-page {
-  background-color: #000034;
-}
-
-.light-page {
-  background-color: #C3D3A6;
+  background-color: #F9F5F1;
+  color: #3F5D7A;
 }
 
 .hero-text {

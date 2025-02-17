@@ -32,7 +32,7 @@ function WorkExperience() {
                 className="hidden md:block h-auto w-full rounded-xl flex items-center justify-center sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start"
                 style={{ borderColor: clickedWorkExperience?.colour || hoveredWorkExperience?.colour, borderWidth: "5px" }}
               >
-                <WorkExperienceDescription workExperience={clickedWorkExperience.information || hoveredWorkExperience.information} />
+                <WorkExperienceDescription workExperience={clickedWorkExperience || hoveredWorkExperience} />
               </div>
             // : <div className="hidden border-white border-[5px] md:block h-[50vh] w-full rounded-xl flex items-center justify-center sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start" />
             : <p className="sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start">psssttt... (try clicking one of the boxes)</p>

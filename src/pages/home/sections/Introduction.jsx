@@ -7,7 +7,7 @@ function Introduction() {
   const [hovered, setHovered] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [typedText] = useTypewriter({
-    words: ["all things digital.", "product management.", "design.", "software engineering."],
+    words: ["all things digital.", "product management.", "data science.", "data analytics.","digital transformation."],
     loop: true,
     typeSpeed: 60,
     deleteSpeed: 30
@@ -34,7 +34,7 @@ function Introduction() {
           onMouseLeave={() => setHovered(false)}
           onMouseMove={handleMouseMove}
         >
-          <HeaderOne className="text-6xl md:text-8xl">Hello,<br />I am <span className="underline">Min.</span></HeaderOne>
+          <HeaderOne className="text-6xl md:text-8xl">Hello,<br />I am <span className="underline">Saanvi.</span></HeaderOne>
           {hovered && 
             <img
               src={`${process.env.PUBLIC_URL}/Me.png`}

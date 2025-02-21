@@ -3,16 +3,16 @@ import SectionTwo from "../../../components/SectionTwo";
 
 function Contact() {
   const contactPlatformList = [
-    { "name": "LinkedIn", "link": "https://www.linkedin.com/in/ce-min/" },
-    { "name": "Gmail", "link": "mailto:cm.pang25@gmail.com" },
-    { "name": "GitHub", "link": "https://github.com/ceminpangastur" }
+    { "name": "LinkedIn", "link": "https://www.linkedin.com/in/saanviyerawar/" },
+    { "name": "Gmail", "link": "mailto:saanvi.yerawar@gmail.com" },
+    { "name": "GitHub", "link": "https://github.com/syerarwarunsw" }
   ];
 
   return (
     <SectionTwo id="contact">
       <div className="flex flex-col items-center gap-11">
         <HeaderThree>Feel free to contact me! :)</HeaderThree>
-        <p>Email: cm.pang25@gmail.com</p>
+        <p>Email: saanvi.yerawar@gmail.com</p>
         <div className="flex items-center justify-center gap-[50px] md:gap-[100px]">
           {contactPlatformList.map((contactPlatform, index) => (
             <a href={contactPlatform.link} key={index} target="_blank" rel="noopener noreferrer">

@@ -38,7 +38,7 @@ function Introduction() {
           {hovered && 
             <img
               src={`${process.env.PUBLIC_URL}/Me.png`}
-              alt="Min"
+              alt="Saanvi"
               className="absolute h-[150px] w-[150px] pointer-events-none rounded-full object-cover opacity-80 translate-x-[-50%] translate-y-[-50%]"
               style={{
                 left: `${mousePosition.x}px`,

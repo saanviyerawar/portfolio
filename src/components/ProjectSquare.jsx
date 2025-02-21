@@ -13,7 +13,7 @@ function ProjectSquare({ project }) {
         <img 
           src={`${process.env.PUBLIC_URL}/${project.image}-Project.png`} 
           alt={`${project.title}`} 
-          className="w-full h-full object-cover object-center rounded-lg"
+          className="w-full h-full object-contain rounded-lg"
         />
         <div 
           className="flex flex-col absolute inset-0 p-4 bg-opacity-80 items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 backdrop-blur-md rounded-lg gap-[5px] md:gap-[20px]"

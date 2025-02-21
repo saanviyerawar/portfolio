@@ -23,7 +23,7 @@ function WorkExperience() {
       <div className="flex flex-col md:flex-row gap-[50px] md:gap-[100px] justify-between h-auto">
         <div className="flex flex-col gap-11">
           <HeaderTwo className="text-center md:text-left">Work Experience.</HeaderTwo>
-          <HeaderThree className="text-center md:text-left">In the past I have worked at various different organisations (as an intern).</HeaderThree>
+          <HeaderThree className="text-center md:text-left">I have gained valuable experience through internships at multiple organizations, where I have contributed to various projects and developed key skills.</HeaderThree>
           {clickedWorkExperience || hoveredWorkExperience
             ? <div 
                 className="hidden md:block h-auto w-full rounded-xl flex items-center justify-center sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start"
@@ -32,7 +32,7 @@ function WorkExperience() {
                 <WorkExperienceDescription workExperience={clickedWorkExperience || hoveredWorkExperience} />
               </div>
             // : <div className="hidden border-white border-[5px] md:block h-[50vh] w-full rounded-xl flex items-center justify-center sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start" />
-            : <p className="sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start">psssttt... (try clicking one of the boxes)</p>
+            : <p className="sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start">Click on one of the boxes to learn more!</p>
           }
         </div>
         <div className="w-full md:w-auto flex justify-center md:justify-start">

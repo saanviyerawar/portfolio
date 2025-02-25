@@ -5,7 +5,7 @@ function Contact() {
   const contactPlatformList = [
     { "name": "LinkedIn", "link": "https://www.linkedin.com/in/saanviyerawar/" },
     { "name": "Gmail", "link": "mailto:saanvi.yerawar@gmail.com" },
-    { "name": "GitHub", "link": "https://github.com/syerarwarunsw" }
+    { "name": "GitHub", "link": "https://github.com/saanviyerawar" }
   ];
 
   return (

@@ -21,6 +21,7 @@ function Projects () {
         <HeaderThree className="text-center md:text-left">
           Here are some projects I have worked on, including both technical and non-technical.
         </HeaderThree>
+        <p className="sticky top-[3vh] lg:top-[10vh] xl:top-[20vh] self-start">Click on one of the boxes to learn more!</p>
         <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-[25px] lg:gap-[50px] xl:gap-[100px] sm:p-[50px] md:p-[75px] lg:p-0">
           {projectList.map((project, index) => {
             return <ProjectSquare project={project} key={`project-${index}`} />

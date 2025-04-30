@@ -13,7 +13,7 @@ function WorkExperienceCard({ workExperience, onMouseEnter, onMouseLeave, onClic
   return (
   <div
     className={`flex flex-col md:flex-row gap-4 md:gap-10 items-center 
-      2xl:w-[800px] md:w-[400px] w-full h-auto md:h-[140px] p-6 md:p-8 rounded-lg 
+      2xl:w-[800px] md:w-[400px] h-auto md:h-[140px] p-6 md:p-8 rounded-lg 
       transform sticky self-start shadow-2xl border transition-transform duration-300 
       hover:shadow-[rgba(0,0,0,0.8)] hover:-translate-y-2 clickable ${selected ? 'border-4' : 'border-gray-300 border-opacity-70 border-2'} flex-shrink-0`
     }

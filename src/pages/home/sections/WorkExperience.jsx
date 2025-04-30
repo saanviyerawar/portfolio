@@ -13,11 +13,11 @@ function WorkExperience() {
   const { mode } = useContext(ModeContext);
   
   const workExperienceList = [
-    { colour: `${mode === "dark" ? "#9F3B47" : "#97D7FF"}`, textColour: `${mode === "dark" ? "#FFFFFF" : "#000000"}`, rotate: "5deg", top: { default: "40px", sm: "60px", md: "80px", lg: "100px" },  information: { title: "Data Science & Analytics", company: "Atlassian", image: "Atlassian", description: [""]}},
-    { colour: `${mode === "dark" ? "#D37B44" : "#98CB3D"}`, textColour: `${mode === "dark" ? "#FFFFFF" : "#000000"}`, rotate: "-5deg", top: { default: "80px", sm: "120px", md: "160px", lg: "200px" }, information: { title: "Data & Digital Transformation", company: "PwC", image: "PwC", description: [""] } },
+    { colour: `${mode === "dark" ? "#D37B44" : "#97D7FF"}`, textColour: `${mode === "dark" ? "#FFFFFF" : "#000000"}`, rotate: "5deg", top: { default: "40px", sm: "60px", md: "80px", lg: "100px" },  information: { title: "Data Science & Analytics", company: "Atlassian", image: "Atlassian", description: [""]}},
+    { colour: `${mode === "dark" ? "#9F3B47" : "#98CB3D"}`, textColour: `${mode === "dark" ? "#FFFFFF" : "#000000"}`, rotate: "-5deg", top: { default: "80px", sm: "120px", md: "160px", lg: "200px" }, information: { title: "Data & Digital Transformation", company: "PwC", image: "PwC", description: [""] } },
     { colour: `${mode === "dark" ? "#B25754" : "#97D7FF"}`, textColour: `${mode === "dark" ? "#FFFFFF" : "#000000"}`, rotate: "5deg", top: { default: "120px", sm: "180px", md: "240px", lg: "300px" },  information: { title: "Growth & Operations Associate", company: "Build Club", image: "BuildClub", description: [""]}},
     { colour: `${mode === "dark" ? "#D37B44" : "#98CB3D"}`, textColour: `${mode === "dark" ? "#FFFFFF" : "#000000"}`, rotate: "-5deg", top: { default: "160px", sm: "240px", md: "320px", lg: "400px" }, information: { title: "Research Assistant", company: "UNSW School of Information Systems, Technology & Management", image: "UNSWSISTM", description: [""]}},
-    { colour: `${mode === "dark" ? "#B25754" : "#97D7FF"}`, textColour: `${mode === "dark" ? "#FFFFFF" : "#000000"}`, rotate: "5deg", top: { default: "200px", sm: "280px", md: "360px", lg: "500px" },  information: { title: "Data Science Ambassador", company: "UNSW",  image: "UNSW", description: [""]}}
+    { colour: `${mode === "dark" ? "#9F3B47" : "#97D7FF"}`, textColour: `${mode === "dark" ? "#FFFFFF" : "#000000"}`, rotate: "5deg", top: { default: "200px", sm: "280px", md: "360px", lg: "500px" },  information: { title: "Data Science Ambassador", company: "UNSW",  image: "UNSW", description: [""]}}
   ];
 
   return (
